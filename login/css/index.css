@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body {
+  background: #f7f7f7; }
+
+a:hover {
+  color: #e91456;
+  text-decoration: underline; }
+
+.head_box {
+  background: #f7f7f7; }
+  .head_box .head_con {
+    height: 74px;
+    line-height: 74px;
+    margin: 0 auto;
+    position: relative;
+    width: 1190px;
+    padding: 46px 0 20px; }
+    .head_box .head_con img {
+      float: left; }
+    .head_box .head_con .head_user {
+      float: left;
+      font-family: "微软雅黑";
+      font-size: 17px; }
+      .head_box .head_con .head_user i {
+        color: #c9c9c9;
+        padding: 0 15px;
+        font-size: 17px; }
+    .head_box .head_con .tv_vip {
+      float: right; }
+      .head_box .head_con .tv_vip .head_font {
+        color: #c9c9c9;
+        padding: 0 5px; }
+      .head_box .head_con .tv_vip .head_a {
+        color: #e91456; }
+
+.content {
+  width: 1200px;
+  height: 377px;
+  margin: 0 auto 20px;
+  background: #f7f7f7; }
+  .content .content_left {
+    float: left; }
+  .content .content_right {
+    padding-top: 10px;
+    width: 347px;
+    height: 367px;
+    background: #fff;
+    float: right;
+    text-align: center;
+    position: relative; }
+    .content .content_right .vip_register {
+      width: 275px;
+      height: 36px;
+      display: inline-block; }
+      .content .content_right .vip_register p {
+        font-size: 14px;
+        float: left;
+        line-height: 36px; }
+      .content .content_right .vip_register a {
+        color: #e91456;
+        float: right;
+        line-height: 36px; }
+    .content .content_right #txt {
+      width: 255px;
+      height: 30px;
+      padding-left: 10px;
+      box-shadow: 1px 1px 3px red;
+      padding-left: 10px; }
+    .content .content_right .num-list {
+      width: 265px;
+      height: 100px;
+      background: #fff;
+      border: 1px solid #ccc;
+      left: 40px;
+      top: 80px;
+      position: absolute;
+      overflow: auto;
+      z-index: 10;
+      display: none; }
+      .content .content_right .num-list .lis {
+        height: 20px;
+        line-height: 20px;
+        padding-left: 5px;
+        text-align: left; }
+      .content .content_right .num-list .lis:hover {
+        background: pink; }
+    .content .content_right #psw {
+      width: 255px;
+      height: 30px;
+      padding-left: 10px;
+      margin: 16px 0;
+      box-shadow: 1px 1px 3px red;
+      padding-left: 10px; }
+    .content .content_right .confcode {
+      width: 265px;
+      height: 32px;
+      margin-bottom: 12px;
+      display: inline-block;
+      margin-left: -10px; }
+      .content .content_right .confcode #txt1 {
+        width: 110px;
+        height: 32px;
+        border: 1px solid #888;
+        float: left;
+        padding-left: 10px;
+        font-size: 19px;
+        text-align: center; }
+      .content .content_right .confcode .code {
+        width: 85px;
+        height: 32px;
+        border: 1px solid #888;
+        float: left;
+        border-left: none;
+        font-size: 20px;
+        line-height: 32px;
+        -moz-user-select: none;
+        color: red; }
+    .content .content_right .loginbtn {
+      width: 277px;
+      display: inline-block; }
+      .content .content_right .loginbtn div {
+        height: 36px;
+        line-height: 36px; }
+        .content .content_right .loginbtn div #check {
+          float: left;
+          width: 14px;
+          height: 14px;
+          margin-top: 12px;
+          margin-left: 4px; }
+        .content .content_right .loginbtn div p {
+          font-size: 12px;
+          float: left;
+          line-height: 36px;
+          margin-left: 5px; }
+        .content .content_right .loginbtn div a {
+          font-size: 12px;
+          float: left;
+          line-height: 36px;
+          margin-left: 15px; }
+      .content .content_right .loginbtn #sub {
+        width: 273px;
+        height: 36px;
+        font-size: 14px;
+        color: #fff;
+        background: #e21357;
+        line-height: 36px;
+        border: none;
+        margin: 10px 0 14px; }
+    .content .content_right .other {
+      padding-top: 14px;
+      border-bottom: 1px solid #E8E8E7;
+      line-height: 30px;
+      font-size: 12px; }
+    .content .content_right .qqweibo {
+      width: 277px;
+      display: inline-block;
+      margin-top: 10px; }
+      .content .content_right .qqweibo .qq img {
+        height: 14px;
+        vertical-align: middle; }
+      .content .content_right .qqweibo .weibo {
+        margin-left: 20px; }
+        .content .content_right .qqweibo .weibo img {
+          vertical-align: bottom; }
+
+/*# sourceMappingURL=index.css.map */

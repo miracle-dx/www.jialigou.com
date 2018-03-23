@@ -1,0 +1,44 @@
+body{background: #F7F7F7;}
+a:hover {color: #e91456;text-decoration: underline;}
+.head{width: 100%;background: #fff;text-align: center;
+    .head_con{width:1190px;display: inline-block;padding: 36px 0 20px;
+        a{float: left;}
+        .l_span{float: left;font-size: 17px;color: #444;line-height: 74px;margin-left: 12px;font-family: "微软雅黑";
+            i{color: #c9c9c9;padding-right: 15px;font-size: 17px;}
+        }
+        .r_span{float: right;display: block;border: 1px solid #e5007f;width: 110px;height: 30px;margin-top: 20px;
+            i{float: left;line-height: 30px;margin:0 4px;}
+            a{float: left;line-height: 30px;color: #e91456;}
+        }
+    }
+}
+.content{width: 1190px;background: #fff;margin: 30px auto 20px;overflow: hidden;padding-top: 20px;
+    .left_content{width: 435px;height: 377px;background: #fff;float: left;
+        .user{height: 36px;margin: 20px 0;position: relative;
+            span{width: 80px;text-align: left;line-height: 36px;display: inline-block;margin-left: 50px;}
+            #txt{width: 275px;height: 30px;padding-left: 5px;box-shadow: 1px 1px 3px red ;}
+            .num-list{width: 280px;height: 100px;background: #fff;border: 1px solid #ccc;left: 134px;top: 34px;position: absolute;overflow: auto;display: none;z-index: 10;
+                .lis{height: 20px;line-height: 20px;padding-left:5px;}
+                .lis:hover{background: pink;}
+            }
+            .notice{width: 280px;height: 20px;border: 1px solid #ccc;background: #eee;position: absolute;left: 134px;top: 34px;text-align: center;font-size: 13px;line-height: 20px;display: block;display: none;}
+        }
+        .pass{height: 36px;margin: 20px 0;
+            span{width: 80px;text-align: left;line-height: 36px;display: inline-block;margin-left: 50px;}
+            #pass{width: 275px;height: 30px;padding-left: 5px;box-shadow: 1px 1px 3px red ;}
+        }
+        .conf{height: 36px;margin: 20px 0;
+            span{width: 80px;text-align: left;line-height: 36px;display: inline-block;margin-left: 50px;}
+            #passconf{width: 275px;height: 30px;padding-left: 5px;box-shadow: 1px 1px 3px red;}
+        }
+        .logins{width:277px;height: 67px;margin: 0 0 0 130px;
+        p{height: 36px;line-height: 36px;}
+            #sub{width: 274px;height: 36px;background: #e21357; font-size: 14px;color: #fff;line-height: 36px;border: none; }
+            #sub:hover{background: #CC1C23;}
+            .last{line-height: 40px;
+                a{color: #e21357;}
+            }
+        } 
+    }
+    .right_content{float: left;}
+}

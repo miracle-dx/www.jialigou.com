@@ -1,0 +1,1459 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>嘉丽购</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+	<link rel="stylesheet" href="css/function.css" type="text/css"/>
+	<link rel="stylesheet" href="css/jialigou.css" type="text/css"/>
+	<link rel="stylesheet" href="css/footer.css" type="text/css"/>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="body">
+		<div class="g-head">
+			<div class="m-nav f-cb" style="height:auto;">
+			<div style="width:100%;background:#f7f7f7;">
+				<div class="m-nav-content f-padding1 f-tal">
+					<div class="f-tel f-fl f-margin-right f-vam f-pr" style="height:28px;line-height:28px;width:230px;">
+						<p class="f-ib f-pa" style="height:21px;line-height:21px;top:3px;">
+							<i class="f-tel-i"></i>电话热线 <span class="s-hot-query-highlight f-fwb" style="font-size:14px;">400-630-0077</span>
+						</p>
+					</div>
+					<p class="login-info f-fl">
+						<span class="f-margin-right">
+							<a href="login/login.html" target="_blank" class="person">[登陆]</a>
+						</span>
+						<span>
+							<a href="register/register.html" target="_blank">[免费注册]</a>
+						</span>
+					</p>
+					<div style="display:inline-block;" class="f-fr">
+						<p class="s-info f-margin-right">
+							<span class="f-margin-right"><a href="#">我的嘉</a></span>
+							<span><a href="#">我的订单</a></span>
+						</p>
+						<p class="service-info f-margin-right">
+							<span class="f-margin-right"><a href="#">客户服务</a></span>
+							<span><a href="#">电视会员激活</a></span>
+						</p>
+						<p class="mobile-jialigou">
+							<i class="f-mobile-i"></i>
+							<a target="_blank" href="#/">手机嘉丽购</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-clear"></div>
+		<!--搜索购物车框-->
+		<div class="m-search f-pr">
+			<a href="#" id="logo" style="margin-left: -804px;">
+				<img src="images/ladygood.png"/>
+			</a>
+			<div class="sch f-ib f-tal f-fl" style="margin-top:0;margin-left:400px;">
+				<form action="#" method="get" id="searchForm">
+					<div class="f-ib" style="border:1px solid #E91456;">
+						<input class="u-ipt u-ipt-err f-vam f-ib" id="top-search-input" name="keyword" type="text" title="请输入搜索文字" placeholder="输入商品名称或电视商品编号" value="" style="width:320px;height:30px;line-height:30px;padding:0;padding-left:5px;font-size:12px;border:0;"/>
+						<button type="button" class="u-btn u-btn-c1" style="margin-left:-6px;font-size:13px;height:32px;line-height:32px;border:0;font-weight:bold;"><i style="display:inline-block;height:16px;width:16px;background:url('images/search.png');vertical-align:middle;margin-right:12px;"></i>搜索</button>
+					</div>
+				</form>
+			</div>
+			<div class="f-ib f-pa" style="right:0;top:0;">
+				<a href="cart/cart.html" class="">
+					<div style="width:136px;height:28px;line-height:28px;margin:20px 0 23px;padding:0 10px;" class="s-border">
+						<span class="f-pr f-ib f-fl" style="display:inline-block;width:16px;height:13px;margin-right:25px;margin-top:10px;background:url('images/cart.png');vertical-align:middle;">
+							<i class="f-pa" style="display:inline-block;height:15px;line-height:15px;width:15px;font-size:10px;top:-5px;right:-14px;text-align:center;background:url('images/anniu.png');color:#ffffff;" id="shopping_cart_num">0</i>
+						</span>
+						<span class="f-ib f-fl">我的购物车</span>
+					</div>
+				</a>
+			</div>
+			<div class="f-clear"></div>
+		</div></div>
+		<!--商品内容-->
+		<div class="g-content f-pr">
+			<br style="clear:both;"/>
+			<!--nav-->
+			<div style="height:512px;">
+				<!--导航栏-->
+				<div class="m-main-nav f-tal">
+					<ul class="j-nav-page" style="margin-left:120px;">
+						<li class="f-ib itm"><a href="/" class="f-fsnav index f-fwb">首页</a></li>
+						<li class="f-ib gray">|</li>
+						<li class="f-ib itm"><a href="/tv/live.html" class="f-fsnav tv f-fwb">TV直播</a></li>
+						<li class="f-ib gray">|</li>
+						<li class="f-ib itm"><a href="/topic/topic/topic_id/8" class="f-fsnav global f-fwb">嘉丽全球购</a></li>
+						<li class="f-ib gray">|</li>
+						<li class="f-ib itm"><a href="/jhx/index.html" class="f-fsnav jhx f-fwb">水果生鲜</a></li>
+						<li class="f-ib gray">|</li>
+						<li class="f-ib itm"><a href="/JiaJu/index.html" class="f-fsnav jiaju f-fwb">家具商城</a></li>
+						<li style="margin-right:100px;color:#E91456;" class="f-ib f-fr f-fwb"><i style="color:#000000;">订购热线</i> 400-630-0077</li>
+						<li class="f-ib itm"><a href="/flashsales/index.html" class="f-fsnav flashsales f-fwb">闪购</a></li>
+						<li class="f-ib gray">|</li>
+					</ul>
+				</div>
+				<!--nav内容-->
+				<div class="f-pr j-slider-bg" style="height:480px;border-top:2px solid #e91455;">
+					<!--轮播图-->
+				<div class="f-pa f-tac" style="width:100%;margin:0 auto;">
+					<ul class="uls" style="width:100%;height:480px;overflow:hidden;position:relative;z-index:999;">
+						<li style="height:480px;outline:none;width:100%;overflow:hidden;background:url('images/1.jpg') no-repeat center 0;"><a href="" target="_blank" style="width:1200px;height:400px;outline:none;display:inline-block;"></a></li>
+						<li style="height:480px;outline:none;width:100%;overflow:hidden;background:url('images/2.jpg') no-repeat center 0;"><a href="" target="_blank" style="width:1200px;height:400px;outline:none;display:inline-block;"></a></li>
+						<li style="height:480px;outline:none;width:100%;overflow:hidden;background:url('images/3.jpg') no-repeat center 0;"><a href="" target="_blank" style="width:1200px;height:400px;outline:none;display:inline-block;"></a></li>
+						<li style="height:480px;outline:none;width:100%;overflow:hidden;background:url('images/4.jpg') no-repeat center 0;"><a href="" target="_blank" style="width:1200px;height:400px;outline:none;display:inline-block;"></a></li>
+						<li style="height:480px;outline:none;width:100%;overflow:hidden;background:url('images/5.jpg') no-repeat center 0;">
+							<a href="#" target="_blank" style="width:1200px;height:400px;outline:none;display:inline-block;"></a></li>
+					</ul>
+					<ol class="j-slider" style="position:absolute;z-index:9999;left:0;width:100%;bottom:10px;">
+						<li class="f-ib f-tac f-margin-h5 f-fs2 s-slider-red f-index-slider">1</li>
+						<li class="f-ib f-tac f-margin-h5 f-fs2 s-slider-black f-index-slider">2</li>
+						<li class="f-ib f-tac f-margin-h5 f-fs2 s-slider-black f-index-slider">3</li>
+						<li class="f-ib f-tac f-margin-h5 f-fs2 s-slider-black f-index-slider">4</li>
+						<li class="f-ib f-tac f-margin-h5 f-fs2 s-slider-black f-index-slider">5</li>
+					</ol>
+				</div>
+				<!--轮播结束-->
+				<div class="m-category-menu" style="margin-top:0;">
+					<div class="m-category-nav-container f-fl f-tal f-pr" style="background-color:#3B2C33;z-index:99999;margin-top:-36px;">
+					<h2 class="menu-title f-fsnav f-fwb" style="color:#ffffff;position:relative;z-index:999999;">全部商品分类</h2>
+						<!--TV直播，水果生鲜-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:2px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title">
+									<a href="#" class="f-fs2">TV直播</a>&nbsp;
+									<a href="#" class="f-fs2"> 水果生鲜</a>
+									</h3>
+									<div class="category-detail">
+										<a class="detail" href="#">最新上架</a>&nbsp;
+										<a class="detail" href="#">热销排行</a>&nbsp;
+									</div>
+									<span class="info-arrow f-db s-info-arrow"></span>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+							</div>
+						</div>			
+						<!--个护美妆-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title">
+									<a class="f-fs2" href="#">个护美妆</a>
+									</h3>
+									<div class="category-detail">
+										<a class="detail" href="#">全身护理</a>&nbsp;&nbsp;
+										<a class="detail" href="#">面部护理</a>&nbsp;&nbsp;
+										<a class="detail" href="#">化妆用品</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+									<a class="s-sub-category f-sub-category f-fwb" href="#">面部护理</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">全身护理</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">美容工具</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>#
+									<a class="s-sub-category f-sub-category f-fwb" href="#">美发护发</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">香水彩妆</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">口腔护理</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/></span>
+								</p>
+							</div>
+						</div>
+						<!--家居日用-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="#">家居日用</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">内衣</a>&nbsp;&nbsp;
+										<a class="detail" href="#">女装</a>&nbsp;&nbsp;
+										<a class="detail" href="#">男装</a>&nbsp;&nbsp;&nbsp;
+										<a class="detail" href="/sale/cate_16.html">男鞋</a>&nbsp;&nbsp;
+										<a class="detail" href="#">女鞋</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+									<a class="s-sub-category f-sub-category f-fwb" href="#">家具</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">烹饪锅具</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">厨具刀具</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">厨房电器</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">餐饮用具</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">清洁收纳</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">家居饰品</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">日用杂货</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/>
+									<a class="s-sub-category f-sub-category f-fwb" href="#">卫浴健身</a>
+									<span class="f-padding3 s-info-arrow"> ></span><br/></span>
+								</p>
+							</div>
+						</div>
+						<!--食品生鲜-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="/sale/cate_3.html">食品生鲜</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">项链吊坠</a>&nbsp;&nbsp;
+										<a class="detail" href="#">手链手镯</a>&nbsp;&nbsp;
+										<a class="detail" href="#">工艺品</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+										<a class="s-sub-category f-sub-category f-fwb" href="#">生鲜食品</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">酒水茶饮</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">休闲食品</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">粮油干货</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">营养保健</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>
+						<!--服装箱包-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="/sale/cate_4.html">服装箱包</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="/sale/cate_28.html">家纺</a>&nbsp;&nbsp;
+										<a class="detail" href="#">生活日用</a>&nbsp;&nbsp;
+										<a class="detail" href="#">厨房日用</a>&nbsp;&nbsp;
+										<a class="detail" href="#">床品套件</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+										<a class="s-sub-category f-sub-category f-fwb" href="#l">女装</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#l">男装</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#l">鞋靴</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">箱包</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">配饰</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">运动户外</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">珠宝藏品</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>
+						<!--布艺家纺-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="#">布艺家纺</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">五金电器</a>&nbsp;&nbsp;
+										<a class="detail" href="/sale/cate_25.html">家居电器</a>&nbsp;&nbsp;
+										<a class="detail" href="#">厨房电器</a>&nbsp;&nbsp;;
+									</div>
+									<!--<span class="info-arrow f-db s-info-arrow"> ></span>-->
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+										<a class="s-sub-category f-sub-category f-fwb" href="#">床品套件</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">毛巾被子</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">凉席</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">枕头</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>
+						<!--家电数码-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="/sale/cate_6.html">家电数码</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">健身器材</a>&nbsp;&nbsp;
+										<a class="detail" href="#">配餐零食</a>&nbsp;&nbsp;
+										<a class="detail" href="#">红酒白酒</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+										<a class="s-sub-category f-sub-category f-fwb" href="list/list.html">生活家电</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">大家电</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">手机通讯</a><span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">电子数码</a><span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>
+						<!--母婴用品-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="#">母婴用品</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">长沙房产</a>&nbsp;&nbsp;
+										<a class="detail" href="#">整体家装</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;"><a class="s-sub-category f-sub-category f-fwb" href="#">婴幼护理</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>
+						<!--保险票务-->
+						<div class="m-category-nav-info f-pd0">
+							<div class="category-main f-pd0" style="padding-bottom:0px;">
+								<div class="f-pr f-ib f-cat-nav">
+									<h3 class="f-fs2 category-nav-title"><a class="f-fs2" href="/sale/cate_8.html">保险票务</a></h3>
+									<div class="category-detail">
+										<a class="detail" href="#">客厅</a>&nbsp;&nbsp;
+										<a class="detail" href="#">卧室</a>&nbsp;&nbsp;
+										<a class="detail" href="#">餐厅</a>&nbsp;&nbsp;
+									</div>
+								</div>
+							</div>
+							<div class="m-category-sub-nav f-pa f-dn">
+								<p class="f-ib" style="width:570px;">
+									<span class="f-ib" style="margin-left:10px; margin-right:12px;">
+										<a class="s-sub-category f-sub-category f-fwb" href="#">票务</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+										<a class="s-sub-category f-sub-category f-fwb" href="#">保险</a>
+										<span class="f-padding3 s-info-arrow"> ></span><br/>
+									</span>
+								</p>
+							</div>
+						</div>					
+					</div>
+					<div class="m-banner-container f-fl f-pr">
+						<div class="f-fl f-pr f-tac" style="width:810px;height:480px;overflow:hidden;"></div>
+						<div align="center" class="m-small-banner f-ib f-vat f-pr" style="margin-left:-3px;z-index:999999;">
+							<div class="m-top f-tac">
+								<h2 class="s-banner s-hot-query-highlight">正在直播</h2>
+								<span style="display:inline-block;margin-bottom:10px;">[19:16-19:55]</span>
+								<div style="width:190px; height:190px; vertical-align:baseline" align="center">
+									<a href="#" target="_blank"><img src="images/55.jpg" alt="" class="am-thumbnail" width="175px" height="175;"></a>
+								</div>
+								<p class="f-tal f-padding1 f-ib">
+									<a href="#" target="_blank">伊丹诺法式大提花寝具组(二选一)</a>
+								</p>
+								<div class="f-clear">
+								</div>
+								<p class="f-fs3 s-hot-query-highlight f-pr f-ib" style="margin-top:10px;">
+									<i class="s-hot-query-highlight f-vam f-ib" style="margin-top:6px;">¥</i>209
+								</p>
+								<div class="f-clear">
+								</div>
+							</div>
+							<div class="m-bottom f-tac s-border f-pa" style="border-left:0;border-right:0;border-bottom:0;bottom:25px;left:18px;">
+								<h2 class="s-banner s-hot-query-highlight">嘉 书</h2>
+							</div>
+						</div>
+					</div>
+					<div class="f-clear"></div>
+				</div>
+			</div>
+		</div>
+			<div class="f-clear"></div>
+			<div class="g-tv-live">
+				<div class="m-tv-live f-pr" style="height:384px;overflow:hidden;">
+					<div class="f-fl tv-nav">
+						<div class="f-ib">
+							<ul class="f-ib f-tac" style="line-height:50px;width:190px;">
+								<li class="f-ib f-fs2 s-font f-fwb j-today s-hot-query-highlight f-fl" style="cursor:pointer;">今日热播</li>
+								<li class="f-ib f-fs2 s-font f-fwb j-last" style="cursor:pointer;">昨日热播</li>
+							</ul>
+							<div class="f-clear"></div>
+							<a target="_blank" class="f-ib" href="#">
+								<img src="images/8.jpg" class="f-ib" width="190" height="330">
+							</a>
+						</div>
+					</div>
+					<ul class="s-tv-live f-fl f-pa j-today-live f-db j-live-slider" style="display: none;">
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[00:00~00:43]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/43.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">瑞士军表-50周年钻表珍藏版豪华套组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥3680.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[00:44~01:26]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/44.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">（年终庆）法国伯尼城堡原瓶进口干红惊爆组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥498.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[01:26~02:09]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/45.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">祥云瑞气全自动黑檀木茶盘套组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥998.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[02:10~02:52]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank"><img src="images/46.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">（周年庆）御龙堂宫廷普洱金砖礼盒组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥498.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+						</div>
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[02:53~03:36]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank"><img src="images/47.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">普兰多泰国进口乳胶床垫1.5米</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥1599.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[02:53~03:36]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/48.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div><div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">普兰多泰国进口乳胶床垫1.8米</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥1799.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[03:37~04:16]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/49.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">赫拉精品蚕丝被1+1超值组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥699.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[04:16~04:55]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/50.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">香港U-CLASS钛合金双光老视镜</a>
+								</p>
+								<div class="f-clear">
+								</div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+						</div>
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[04:55~05:34]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span><a href="#" target="_blank"><img src="images/51.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">美优美首乌生姜防脱养发洗护10件组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[05:34~06:13]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">  直播</span>
+								<a href="#" target="_blank">
+									<img src="images/52.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div><div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">诗蘭庭全棉套件4+4+4组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥499.00
+								</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[06:13~06:52]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#.html" target="_blank">
+									<img src="images/53.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">香草钻石炫白洗衣凝露16+16家庭组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[06:52~07:31]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/54.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">宫诺氨糖软骨素加钙片</a>
+								</p>
+								<div class="f-clear">
+								</div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear">
+								</div>
+							</div>
+							</li>
+						</div>
+						<a class="left_nav" style="display: none;"><</a>
+						<a class="right_nav" style="display: none;">></a>
+					</ul>
+					<ul class="s-tv-live f-fl f-pa j-last-live f-db j-live-slider">
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[00:00~00:43]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/55.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">瑞士军表-50周年钻表珍藏版豪华套组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥3680.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[00:44~01:26]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/56.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">（年终庆）法国伯尼城堡原瓶进口干红惊爆组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥498.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[01:26~02:09]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/57.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">祥云瑞气全自动黑檀木茶盘套组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥998.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[02:10~02:52]</span>
+								<div class="f-clear"></div>
+								<div class="f-pr f-live">
+									<span class="f-ib f-pa f-miaosha-logo">直播</span>
+									<a href="#" target="_blank">
+										<img src="images/58.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+								</div>
+								<div class="f-clear"></div>
+								<div class="f-pa f-bt0">
+									<p class="f-fl f-tal f-padding1">
+										<a href="#" target="_blank">（周年庆）御龙堂宫廷普洱金砖礼盒组</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥498.00</p>
+									<div class="f-clear"></div>
+								</div>
+							</li>
+						</div>
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border">
+								<span class="s-hot-query-highlight tv-live-span f-padding1">[02:53~03:36]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/59.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">普兰多泰国进口乳胶床垫1.5米</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥1599.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[02:53~03:36]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/60.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div><div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">普兰多泰国进口乳胶床垫1.8米</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥1799.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[03:37~04:16]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/61.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">赫拉精品蚕丝被1+1超值组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥699.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[04:16~04:55]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/62.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="/sale/view_122266.html" target="_blank">香港U-CLASS钛合金双光老视镜</a>
+								</p>
+								<div class="f-clear">
+								</div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+						</div>
+						<div class="j-div">
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[04:55~05:34]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/63.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">美优美首乌生姜防脱养发洗护10件组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[05:34~06:13]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">  直播</span>
+								<a href="#" target="_blank">
+									<img src="images/64.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div><div class="f-clear">
+							</div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="/sale/view_121401.html" target="_blank">诗蘭庭全棉套件4+4+4组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥499.00
+								</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[06:13~06:52]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#.html" target="_blank">
+									<img src="images/65.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="#" target="_blank">香草钻石炫白洗衣凝露16+16家庭组</a>
+								</p>
+								<div class="f-clear"></div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear"></div>
+							</div>
+							</li>
+							<li class="f-ib f-tac f-vat f-pr s-white-border"><span class="s-hot-query-highlight tv-live-span f-padding1">[06:52~07:31]</span>
+							<div class="f-clear"></div>
+							<div class="f-pr f-live">
+								<span class="f-ib f-pa f-miaosha-logo">直播</span>
+								<a href="#" target="_blank">
+									<img src="images/66.jpg" width="228px;" height="228px;" alt="" class="am-thumbnail"></a>
+							</div>
+							<div class="f-clear"></div>
+							<div class="f-pa f-bt0">
+								<p class="f-fl f-tal f-padding1">
+									<a href="/sale/view_122456.html" target="_blank">宫诺氨糖软骨素加钙片</a>
+								</p>
+								<div class="f-clear">
+								</div>
+								<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199.00</p>
+								<div class="f-clear">
+								</div>
+							</div>
+							</li>
+						</div>
+						<a class="left_nav" style="display: none;"><</a>
+						<a class="right_nav" style="display: none;">></a>
+					</ul>
+					<div class="f-clear">
+					</div>
+				</div>
+				<div class="f-clear">
+				</div>
+			</div>
+			<div class="f-clear">
+			</div>
+			<!--热销推荐-->
+			<div class="g-tv-live">
+				<div class="f-clear"></div>
+				<div class="m-tv-live f-pr">
+					<div class="f-ib f-fl">
+						<div class="f-ib tv-nav">
+							<ul class="f-ib f-tac"style="margin-left: 50px;">
+								<li class="f-ib f-fs2 s-font f-fwb">热销推荐</li>
+								<li class="f-ib f-fs2"></li>
+							</ul>
+							<div class="f-clear"></div>
+							<a target="_blank" class="f-ib" href="#"><img src="images/16.jpg" width="190" height="330"></a>
+						</div>
+					</div>
+					<ul class="f-ib s-tv-live f-pa f-fl">
+						<li class="f-ib f-tac f-vat f-pr s-white-border">
+						<div class="f-clear"></div>
+						<a href="#" target="_blank"><img src="images/40.jpg" alt="" class="am-thumbnail" width="100%"></a>
+						<div class="f-clear"></div>
+						<div class="f-pa f-bt0 f-tar f-pad-bt">
+							<p class="f-fl f-tal f-padding1 f-text-modify">
+								<a href="#" target="_blank">北京二锅头限量组</a>
+							</p>
+							<div class="f-clear"></div>
+							<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥199</p>
+							<div class="f-clear"></div>
+							<p class="s-hot-query-highlight f-padding1">已热销：5269件</p>
+							<div class="f-clear"></div>
+						</div>
+						</li>
+						<li class="f-ib f-tac f-vat f-pr s-white-border">
+						<div class="f-clear"></div>
+						<a href="#" target="_blank"><img src="images/41.jpg" alt="" class="am-thumbnail" width="100%"></a>
+						<div class="f-clear"></div>
+						<div class="f-pa f-bt0 f-tar f-pad-bt">
+							<p class="f-fl f-tal f-padding1 f-text-modify">
+								<a href="#" target="_blank">永兴便江23度银橙10斤超值组(助农推荐)</a></p>
+							<div class="f-clear"></div>
+							<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥79</p>
+							<div class="f-clear"></div>
+							<p class="s-hot-query-highlight f-padding1">已热销：378件</p>
+							<div class="f-clear"></div>
+						</div>
+						</li>
+						<li class="f-ib f-tac f-vat f-pr s-white-border">
+						<div class="f-clear"></div>
+						<a href="#" target="_blank"><img src="images/10.jpg" alt="" class="am-thumbnail" width="100%"></a>
+						<div class="f-clear"></div>
+						<div class="f-pa f-bt0 f-tar f-pad-bt">
+							<p class="f-fl f-tal f-padding1 f-text-modify">
+								<a href="#" target="_blank">威力8KG全智能大容量热烘干洗衣机加赠组合</a></p>
+							<div class="f-clear"></div>
+							<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥1580</p>
+							<div class="f-clear"></div>
+							<p class="s-hot-query-highlight f-padding1">已热销：189件</p>
+							<div class="f-clear"></div>
+						</div>
+						</li>
+						<li class="f-ib f-tac f-vat f-pr s-white-border">
+						<div class="f-clear"></div>
+						<a href="#" target="_blank"><img src="images/42.jpg" alt="" class="am-thumbnail" width="100%"></a>
+						<div class="f-clear"></div>
+						<div class="f-pa f-bt0 f-tar f-pad-bt">
+							<p class="f-fl f-tal f-padding1 f-text-modify">
+								<a href="#" target="_blank">（周年庆）利维斯顿碳晶空调式取暖器</a></p>
+							<div class="f-clear"></div>
+							<p class="f-fl s-hot-query-highlight f-fs2 f-padding1">¥499</p>
+							<div class="f-clear"></div>
+							<p class="s-hot-query-highlight f-padding1">已热销：301件</p>
+							<div class="f-clear"></div>
+						</div>
+						</li>
+					</ul>
+					<div class="f-clear"></div>
+				</div>
+			</div>
+			<div class="f-clear"></div>
+			<div class="g-floor">
+				<div class="m-floor f-tal f-pr">
+					<ul class="f-fl" style="line-height:50px;width:390px;">
+						<li class="f-ib f-fs2 f-floor"><img src="images/d.png" width="34px" height="34px" class="img-logo"></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">家居日用</a></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">家用电器</a></li>
+						<div class="f-clear"></div>
+					</ul>
+					<div class="f-clear"></div>
+					<div class="floor-show f-tac f-fl f-pr">
+						<div class="floor-show-top"></div>
+						<div class="floor-show-bottom">
+							<a target="_blank" class="f-ib" href="#"><img src="images/32.jpg" width="190" height="390"></a>
+						</div>
+					</div>
+					<div class="floor-banner-container f-pr f-fl">
+						<div class="f-fl" style="height:520px;">
+							<a target="_blank" class="f-ib" href="#"><img src="images/33.jpg" width="386" height="520"></a>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/34.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）西门子8公斤洗烘一体变频滚筒洗衣机</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥4499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/35.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）夏普50英寸4K超高清智能电视</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥3999</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/36.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">利维斯顿碳晶空调式取暖器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/37.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">德国AODIS恒温热水器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥1299</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/38.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">凡帝欧速热电水龙头1+1特惠组</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥199</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/39.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">飞普纳家用多功能不粘锅电火锅</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥298</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="f-clear"></div>
+			</div>
+			<div class="f-clear"></div>
+			<!--个护美妆-->
+			<div class="g-floor">
+				<div class="m-floor f-tal f-pr">
+					<ul class="f-fl" style="line-height:50px;width:390px;">
+						<li class="f-ib f-fs2 f-floor"><img src="images/floor2.png" width="34px" height="34px" class="img-logo"></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">个护美妆</a></li>
+						<div class="f-clear"></div>
+					</ul>
+					<div class="f-clear"></div>
+					<div class="floor-show f-tac f-fl f-pr">
+						<div class="floor-show-top"></div>
+						<div class="floor-show-bottom">
+							<a target="_blank" class="f-ib" href="#"><img src="images/25.jpg" width="190" height="390"></a>
+						</div>
+					</div>
+					<div class="floor-banner-container f-pr f-fl">
+						<div class="f-fl" style="height:520px;">
+							<a target="_blank" class="f-ib" href="#"><img src="images/26.jpg" width="386" height="520"></a>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/27.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）西门子8公斤洗烘一体变频滚筒洗衣机</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥4499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/28.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）夏普50英寸4K超高清智能电视</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥3999</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/29.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">利维斯顿碳晶空调式取暖器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/30.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">德国AODIS恒温热水器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥1299</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/31.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">凡帝欧速热电水龙头1+1特惠组</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥199</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/30.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">飞普纳家用多功能不粘锅电火锅</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥298</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="f-clear"></div>
+			<div class="f-clear"></div>
+			<div class="f-tac"style="margin:15px 0 0 0;">
+				<a target="_blank" href="#" style="display: block;">
+					<img src="images/17.jpg" width="1190" height="88" class="f-ib">
+				</a>
+			</div>
+				<div class="f-clear"></div>
+			</div>
+			<div class="f-clear"></div>
+			<!--食品酒水，运动保健-->
+			<div class="g-floor">
+				<div class="m-floor f-tal f-pr">
+					<ul class="f-fl" style="line-height:50px;width:390px;">
+						<li class="f-ib f-fs2 f-floor"><img src="images/floor3.png" width="34px" height="34px" class="img-logo"></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">食品酒水</a></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">运动保健</a></li>
+						<div class="f-clear"></div>
+					</ul>
+					<div class="f-clear"></div>
+					<div class="floor-show f-tac f-fl f-pr">
+						<div class="floor-show-top"></div>
+						<div class="floor-show-bottom">
+							<a target="_blank" class="f-ib" href="#"><img src="images/18.jpg" width="190" height="390"></a>
+						</div>
+					</div>
+					<div class="floor-banner-container f-pr f-fl">
+						<div class="f-fl" style="height:520px;">
+							<a target="_blank" class="f-ib" href="#"><img src="images/15.jpg" width="386" height="520"></a>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/18.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）西门子8公斤洗烘一体变频滚筒洗衣机</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥4499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/19.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）夏普50英寸4K超高清智能电视</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥3999</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/21.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">利维斯顿碳晶空调式取暖器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/22.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">德国AODIS恒温热水器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥1299</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/23.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">凡帝欧速热电水龙头1+1特惠组</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥199</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/24.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">飞普纳家用多功能不粘锅电火锅</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥298</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="f-clear"></div>
+			</div>
+			<div class="f-clear"></div>
+			<!--家居日用，家用电器-->
+			<div class="g-floor">
+				<div class="m-floor f-tal f-pr">
+					<ul class="f-fl" style="line-height:50px;width:390px;">
+						<li class="f-ib f-fs2 f-floor"><img src="images/floor4.png" width="34px" height="34px" class="img-logo"></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">家居日用</a></li>
+						<li class="f-ib"><a target="_blank" href="#" class="f-ib s-font f-fwb floor-word">家用电器</a></li>
+						<div class="f-clear"></div>
+					</ul>
+					<div class="f-clear"></div>
+					<div class="floor-show f-tac f-fl f-pr">
+						<div class="floor-show-top"></div>
+						<div class="floor-show-bottom">
+							<a target="_blank" class="f-ib" href="#"><img src="images/16.jpg" width="190" height="390"></a>
+						</div>
+					</div>
+					<div class="floor-banner-container f-pr f-fl">
+						<div class="f-fl" style="height:520px;">
+							<a target="_blank" class="f-ib" href="#"><img src="images/15.jpg" width="386" height="520"></a>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/9.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）西门子8公斤洗烘一体变频滚筒洗衣机</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥4499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/10.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">（双11）夏普50英寸4K超高清智能电视</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥3999</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/11.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">利维斯顿碳晶空调式取暖器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥499</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/12.jpg" width="167" height="167"></a>
+								<div class="f-clear"></div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">德国AODIS恒温热水器</a>
+									</p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥1299</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="f-fl f-banner-c-detail">
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/13.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">凡帝欧速热电水龙头1+1特惠组</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥199</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+							<div class="s-floor-container f-pr f-padding1 s-white-border">
+								<a target="_blank" href="#"><img src="images/14.jpg" width="167" height="167"></a>
+								<div class="f-clear">
+								</div>
+								<div class="f-pa" style="bottom:0;">
+									<p class="f-padding1 f-ib" style="height:36px;">
+										<a target="_blank" href="#">飞普纳家用多功能不粘锅电火锅</a></p>
+									<div class="f-clear"></div>
+									<p class="s-hot-query-highlight f-fs2 f-padding1 f-ib">¥298</p>
+									<div class="f-clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="f-clear"></div>
+			</div>
+			<div class="f-clear"></div>
+		</div>
+		<!--广告-->
+		<div id="ad" style="bottom:0px;left:0px;z-index:999999;width:100%;position:fixed;">
+			<span class="f-db f-pa" id="hidead" style="top:0px;left:10px;color:#ffffff;font-size:30px;">x</span>
+			<img src="images/ad1.png" style="width:100%;" class="f-db">
+		</div>
+		<!--尾部-->
+		<div class="foot_box">
+			<div class="foot_sv" style="border-bottom:2px solid #e91455;height:0;"></div>
+			<div class="foot_sv">
+				<div class="sv_con">正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付</div>
+			</div>
+			<div class="f_help">
+				<div class="f_h_content">
+					<div class="f_2d"></div>
+					<div class="f_help_list">
+						<div class="f_h_list">
+							<strong>购物指南</strong>
+							<a href="#" target="_blank">新用户注册/激活</a>
+							<a href="#" target="_blank">如何订购</a>
+							<a href="#" target="_blank">常见问题</a>
+						</div>
+						<div class="f_h_list">
+							<strong>会员中心</strong>
+							<a href="#" target="_blank">会员权益</a>
+							<a href="#" target="_blank">美丽积分</a>
+							<a href="#" target="_blank">订单查询</a>
+							<a href="#" target="_blank">找回密码</a>
+						</div>
+						<div class="f_h_list">
+							<strong>配送服务</strong>
+							<a href="#" target="_blank">物流跟踪</a>
+							<a href="#" target="_blank">免运费政策</a>
+							<a href="#" target="_blank">运费说明</a>
+						</div>
+						<div class="f_h_list">
+							<strong>支付说明</strong>
+							<a href="#" target="_blank">货到付款</a>
+							<a href="#" target="_blank">在线支付</a>
+						</div>
+						<div class="f_h_list">
+							<strong>售后服务</strong>
+							<a href="#" target="_blank">退换货政策</a>
+							<a href="#" target="_blank">退换货流程</a>
+							<a href="#" target="_blank">安全与保密</a>
+						</div>
+					</div>
+					<div class="call_rz">
+						官方客服-百度安全认证-4006300077
+					</div>
+				</div>
+			</div>
+			<div class="foot_txt f-tac">
+				<p>
+					<a href="main.html" target="_self">商城首页</a> | 
+					<a href="#" target="_blank">官网首页</a> | 
+					<a href="#" target="_blank">供应商登录</a> | 
+					<a href="#" target="_blank">供货联系</a> | 
+					<a target="_blank" onclick="addToFavorite();" href="javascript:void(0)">收藏我们</a> | 
+					<a href="#" target="_blank">公司简介</a> | 
+					<a href="#" target="_blank">媒体报道</a> | 
+					<a href="#" target="_blank">嘉丽购招聘</a> | 
+					<a href="#" target="_blank">官方微博</a> | 
+					<a href="#" target="_blank">营业证照</a>
+				</p>
+				<div class="f-clear">
+				</div>
+				<div style="height:60px;">
+					<p class="f-ib" style="line-height:18px;">
+		嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+						国家广电总局批号：广局[2010] 278号
+						<a style="color:#999" href="#" target="_blank">湘ICP备10203162号-3</a>
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+					</p>
+					<div class="f-clear">
+					</div>
+				</div>
+				<p class="rz">
+					<a href="#" target="_blank">
+					<img src="images/kx.jpg" alt="认证联盟 可信网站">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/360.jpg" alt="安全联盟认证">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/alipay_s.gif" alt="支付宝特约商家">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/hn110_s.gif" alt="网络110报警">
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

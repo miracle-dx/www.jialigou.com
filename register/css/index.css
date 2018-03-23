@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body {
+  background: #F7F7F7; }
+
+a:hover {
+  color: #e91456;
+  text-decoration: underline; }
+
+.head {
+  width: 100%;
+  background: #fff;
+  text-align: center; }
+  .head .head_con {
+    width: 1190px;
+    display: inline-block;
+    padding: 36px 0 20px; }
+    .head .head_con a {
+      float: left; }
+    .head .head_con .l_span {
+      float: left;
+      font-size: 17px;
+      color: #444;
+      line-height: 74px;
+      margin-left: 12px;
+      font-family: "微软雅黑"; }
+      .head .head_con .l_span i {
+        color: #c9c9c9;
+        padding-right: 15px;
+        font-size: 17px; }
+    .head .head_con .r_span {
+      float: right;
+      display: block;
+      border: 1px solid #e5007f;
+      width: 110px;
+      height: 30px;
+      margin-top: 20px; }
+      .head .head_con .r_span i {
+        float: left;
+        line-height: 30px;
+        margin: 0 4px; }
+      .head .head_con .r_span a {
+        float: left;
+        line-height: 30px;
+        color: #e91456; }
+
+.content {
+  width: 1190px;
+  background: #fff;
+  margin: 30px auto 20px;
+  overflow: hidden;
+  padding-top: 20px; }
+  .content .left_content {
+    width: 435px;
+    height: 377px;
+    background: #fff;
+    float: left; }
+    .content .left_content .user {
+      height: 36px;
+      margin: 20px 0;
+      position: relative; }
+      .content .left_content .user span {
+        width: 80px;
+        text-align: left;
+        line-height: 36px;
+        display: inline-block;
+        margin-left: 50px; }
+      .content .left_content .user #txt {
+        width: 275px;
+        height: 30px;
+        padding-left: 5px;
+        box-shadow: 1px 1px 3px red; }
+      .content .left_content .user .num-list {
+        width: 280px;
+        height: 100px;
+        background: #fff;
+        border: 1px solid #ccc;
+        left: 134px;
+        top: 34px;
+        position: absolute;
+        overflow: auto;
+        display: none;
+        z-index: 10; }
+        .content .left_content .user .num-list .lis {
+          height: 20px;
+          line-height: 20px;
+          padding-left: 5px; }
+        .content .left_content .user .num-list .lis:hover {
+          background: pink; }
+      .content .left_content .user .notice {
+        width: 280px;
+        height: 20px;
+        border: 1px solid #ccc;
+        background: #eee;
+        position: absolute;
+        left: 134px;
+        top: 34px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+        display: block;
+        display: none; }
+    .content .left_content .pass {
+      height: 36px;
+      margin: 20px 0; }
+      .content .left_content .pass span {
+        width: 80px;
+        text-align: left;
+        line-height: 36px;
+        display: inline-block;
+        margin-left: 50px; }
+      .content .left_content .pass #pass {
+        width: 275px;
+        height: 30px;
+        padding-left: 5px;
+        box-shadow: 1px 1px 3px red; }
+    .content .left_content .conf {
+      height: 36px;
+      margin: 20px 0; }
+      .content .left_content .conf span {
+        width: 80px;
+        text-align: left;
+        line-height: 36px;
+        display: inline-block;
+        margin-left: 50px; }
+      .content .left_content .conf #passconf {
+        width: 275px;
+        height: 30px;
+        padding-left: 5px;
+        box-shadow: 1px 1px 3px red; }
+    .content .left_content .logins {
+      width: 277px;
+      height: 67px;
+      margin: 0 0 0 130px; }
+      .content .left_content .logins p {
+        height: 36px;
+        line-height: 36px; }
+      .content .left_content .logins #sub {
+        width: 274px;
+        height: 36px;
+        background: #e21357;
+        font-size: 14px;
+        color: #fff;
+        line-height: 36px;
+        border: none; }
+      .content .left_content .logins #sub:hover {
+        background: #CC1C23; }
+      .content .left_content .logins .last {
+        line-height: 40px; }
+        .content .left_content .logins .last a {
+          color: #e21357; }
+  .content .right_content {
+    float: left; }
+
+/*# sourceMappingURL=index.css.map */

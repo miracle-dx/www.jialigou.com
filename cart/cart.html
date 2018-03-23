@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/function.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript"></script>
+		<script src="js/ObjToStrAndStrToObj.js" type="text/javascript"></script>
+		<script src="js/cart.js" type="text/javascript"></script>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.cartList{width: 1202px;margin: 0 auto;margin-bottom: 20px;}
+			.cartHead{height: 40px;border: 1px solid #000;}
+			.ll{width: 200px;height: 40px;float: left;font: 20px/34px "宋体";text-align: center;list-style: none;position: relative;line-height: 40px;}
+			.cartgood li{background-color: peachpuff;}
+			.blank{display: none;line-height: 150px;font-size: 16px;}
+			.cartgood{border: 1px solid #000;border-top:none ;height: 40px;}
+			.cartgood li input{width: 30px;text-align: center;}
+			.cartgood li a{font-size: 17px;text-decoration: none;color: darkslateblue;}
+			.cartgood li a.num{width:20px;height: 20px;display: inline-block;background: deeppink;text-align: center;line-height: 20px;font-size: 15px;color: #000;}
+			.cartgood li img{width: 36px;height: 36px;margin-top: 2px;text-align: center;}
+			.check{width: 15px;height: 15px;position: absolute;top: 13px;left: 15px;}
+			.check1{width: 15px;height: 15px;position: absolute;top: 13px;left: 23px;}
+			.totalprice{height: 40px;position: relative;border: 1px solid #000;border-top:none ;}
+			.totalprice>li:nth-of-type(3){width: 130px;height: 100%;background: red;position: absolute;right: 0;top: 0;color: #fff;font-size: 25px;font-weight: bold;-moz-user-select: none;cursor: pointer;}
+			.totalprice>li:nth-of-type(2){width: 250px;height: 100%;position: absolute;right: 150px;}
+			.totalprice p{font-size: 15px;color: #444;}
+			.totalprice i{font-size: 19px;color: red;}
+			.totalprice span{font-size: 15px;color: red;}
+			.cartgood li a.del{border: 1px solid #000;padding: 4px;color: #fff;background: deeppink;font-size: 14px;padding: 0 8px;}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head_bar">
+				<div class="con_left f-fl">
+					<i class="f-t-i"></i>电话热线
+					<span class="f-fwb">400-630-0077</span>
+				</div>
+				<p class="con_middle f-fl">
+					<a href="#" target="_blank" class="person">[登录]</a>
+					<a href="#" target="_blank">[免费注册]</a>
+				</p>
+				<ul class="con_right f-fr">
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">我的嘉</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">我的订单</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">客户服务</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">电视会员激活</a></li>
+					<li class="f-fl"><i class="f-mobile-i"></i><a href="#" target="_blank">手机会员激活</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="my-sch">
+			<div class="my-sch-con">
+				<a href="#" target="_blank" class="f-fl">
+					<img src="images/ladygood.png"/>
+				</a>
+				<p><i>|</i>购物车</p>
+				<div class="shop-step">
+				<ul class="step">
+					<li style="background: red;"><img src="images/orddetailok.png"/></li>
+					<li><img src="images/orddetailok.png"/></li>
+					<li><img src="images/orddetailok.png"/></li>
+					<li><img src="images/orddetailok.png"/></li>
+				</ul>
+				<ul class="doted">
+					<li>我的购物</li>
+					<li>提交订单</li>
+					<li>等待付款</li>
+					<li>支付成功</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="middle">
+			<span class="all">全部商品</span>
+			<span class="return"><a href="../main.html">返回首页</a></span>
+		</div>
+		<div class="cartList">
+			<ul class="cartHead">
+				<li class="ll">缩略图</li>
+				<li class="ll">品名</li>
+				<li class="ll">单价</li>
+				<li class="ll">数量</li>
+				<li class="ll">小计</li>
+				<li class="ll">操作</li>
+			</ul>
+			<p class="blank">购物车还是空的^_^</p>
+		</div>
+		<!--尾部-->
+		<div class="foot_box">
+			<div class="foot_sv" style="border-bottom:2px solid #e91455;height:0;"></div>
+			<div class="foot_sv">
+				<div class="sv_con">正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付</div>
+			</div>
+			<div class="f_help">
+				<div class="f_h_content">
+					<div class="f_2d"></div>
+					<div class="f_help_list">
+						<div class="f_h_list">
+							<strong>购物指南</strong>
+							<a href="#" target="_blank">新用户注册/激活</a>
+							<a href="#" target="_blank">如何订购</a>
+							<a href="#" target="_blank">常见问题</a>
+						</div>
+						<div class="f_h_list">
+							<strong>会员中心</strong>
+							<a href="#" target="_blank">会员权益</a>
+							<a href="#" target="_blank">美丽积分</a>
+							<a href="#" target="_blank">订单查询</a>
+							<a href="#" target="_blank">找回密码</a>
+						</div>
+						<div class="f_h_list">
+							<strong>配送服务</strong>
+							<a href="#" target="_blank">物流跟踪</a>
+							<a href="#" target="_blank">免运费政策</a>
+							<a href="#" target="_blank">运费说明</a>
+						</div>
+						<div class="f_h_list">
+							<strong>支付说明</strong>
+							<a href="#" target="_blank">货到付款</a>
+							<a href="#" target="_blank">在线支付</a>
+						</div>
+						<div class="f_h_list">
+							<strong>售后服务</strong>
+							<a href="#" target="_blank">退换货政策</a>
+							<a href="#" target="_blank">退换货流程</a>
+							<a href="#" target="_blank">安全与保密</a>
+						</div>
+					</div>
+					<div class="call_rz">
+						官方客服-百度安全认证-4006300077
+					</div>
+				</div>
+			</div>
+			<div class="foot_txt f-tac">
+				<p>
+					<a href="main.html" target="_self">商城首页</a> | 
+					<a href="#" target="_blank">官网首页</a> | 
+					<a href="#" target="_blank">供应商登录</a> | 
+					<a href="#" target="_blank">供货联系</a> | 
+					<a target="_blank" onclick="addToFavorite();" href="javascript:void(0)">收藏我们</a> | 
+					<a href="#" target="_blank">公司简介</a> | 
+					<a href="#" target="_blank">媒体报道</a> | 
+					<a href="#" target="_blank">嘉丽购招聘</a> | 
+					<a href="#" target="_blank">官方微博</a> | 
+					<a href="#" target="_blank">营业证照</a>
+				</p>
+				<div class="f-clear">
+				</div>
+				<div style="height:60px;">
+					<p class="f-ib" style="line-height:18px;">
+		嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+						国家广电总局批号：广局[2010] 278号
+						<a style="color:#999" href="#" target="_blank">湘ICP备10203162号-3</a>
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+					</p>
+					<div class="f-clear">
+					</div>
+				</div>
+				<p class="rz">
+					<a href="#" target="_blank">
+					<img src="images/kx.jpg" alt="认证联盟 可信网站">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/360.jpg" alt="安全联盟认证">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/alipay_s.gif" alt="支付宝特约商家">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/hn110_s.gif" alt="网络110报警">
+					</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*尾部样式*/
+.foot_box{ margin:0;margin-top:20px;background:#fff; font-family:"微软雅黑"; font-size:14px;}
+.f_help{ overflow:hidden; padding:10px 0; }
+.f_help .f_h_content{ width:1200px; margin:0 auto;}
+.f_help .f_h_content .f_help_list{ float:left; margin-left:30px; border:1px solid #ccc; border-bottom:none; border-top:none; padding-left:20px;_display:inline; _padding-left:0px;}
+.f_help .f_h_content .f_help_list .f_h_list{ float:left; width:100px; margin:0 20px; _display:inline; _margin:0 10px;}
+.f_help .f_h_content .f_help_list .f_h_list strong{ display:block; height:30px; width:120px; line-height:30px; font-size:14px;}
+.f_help .f_h_content .f_help_list .f_h_list a{display:block; height:30px; width:120px; line-height:30px;}
+.f_2d{float: left;width: 123px;height: 123px;margin-right: 20px;margin-top: 13px;background: url(../images/jlg_2d.jpg);}
+.f_help .f_h_content .call_rz{ float:right; width:260px; height:65px; margin-top:35px;background:url(../images/call_rz.jpg) no-repeat scroll 0 0; text-indent:-9999px; overflow:hidden;}
+.foot_sv{ height:46px; margin:0 0 10px 0;}
+.foot_sv .sv_con{ width:1200px; height:46px; overflow:hidden; margin:0 auto; background:url(../images/foot_info.jpg) no-repeat scroll 0 0;text-indent:-9999px; overflow:hidden;}
+.foot_txt{height:150px;margin:0 auto;overflow:hidden;background:#F8F8F8;}
+.foot_txt p{ line-height:35px; text-align:center; color:#999; }
+.foot_txt .rz{ height:42px; width:100%; overflow:hidden;}
+.foot_txt .rz a{ margin:0; padding:0;}
+.foot_txt .rz img{ margin:0 10px;}
+
+
+

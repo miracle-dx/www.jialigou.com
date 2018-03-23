@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/function.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ObjToStrAndStrToObj.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head_bar">
+				<div class="con_left f-fl">
+					<i class="f-t-i"></i>电话热线
+					<span class="f-fwb">400-630-0077</span>
+				</div>
+				<p class="con_middle f-fl">
+					<a href="../login/login.html" target="_blank" class="person">[登录]</a>
+					<a href="../register/register.html" target="_blank">[免费注册]</a>
+				</p>
+				<ul class="con_right f-fr">
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">我的嘉</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">我的订单</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">客户服务</a></li>
+					<li class="f-fl f-margin-right"><a href="#" target="_blank">电视会员激活</a></li>
+					<li class="f-fl"><i class="f-mobile-i"></i><a href="#" target="_blank">手机会员激活</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="my-sch">
+			<div class="my-sch-con">
+				<a href="#" target="_blank" class="f-fl">
+					<img src="images/ladygood.png"/>
+				</a>
+				<div class="sch f-fl">
+					<form action="#" method="get" class="f-oh">
+							<input type="text" name="txt" id="txt" placeholder="输入商品名称或电视商品编号" class="f-fl"/>
+							<button class="btn f-fr"><i></i>搜索</button>
+					</form>
+				</div>
+				<div class="cart f-fr">
+					<a href="../cart/cart.html" target="_blank">
+						<span class="shop_car f-fl">
+							<i>0</i>
+						</span>
+						<span class="shop_name f-fr">我的购物车</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="f-clear"></div>
+		<div class="shop_nav">
+			<div class="shop_con">
+				<h2 class="f-fl shop_all">全部商品分类</h2>
+				<ul class="f-fl">
+					<li class="f-fl f-padding2"><a href="#" target="_blank">首页</a></li>
+					<li class="f-fl gray">|</li>
+					<li class="f-fl f-padding2"><a href="#" target="_blank">TV直播</a></li>
+					<li class="f-fl gray">|</li>
+					<li class="f-fl f-padding2"><a href="#" target="_blank">水果生鲜</a></li>
+					<li class="f-fl gray">|</li>
+					<li class="f-fl f-padding2"><a href="#" target="_blank">家具商城</a></li>
+					<li class="f-fl gray">|</li>
+					<li class="f-fl f-padding2"><a href="#" target="_blank">闪购</a></li>
+					<li class="f-fl f-padding2 last">订购热线<i>400-630-0077</i></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="f-clear"></div>
+		<div class="products">
+			<div class="product_title"></div>
+			<div class="product_bottom">
+				<div class="product_bottom_left f-fl">
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">个护美妆</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">面部护理</a></li>
+							<li class="f-pad-h5-v25"><a href="#">全身护理</a></li>
+							<li class="f-pad-h5-v25"><a href="#">美容工具</a></li>
+							<li class="f-pad-h5-v25"><a href="#">美发护发</a></li>
+							<li class="f-pad-h5-v25"><a href="#">香水彩妆</a></li>
+							<li class="f-pad-h5-v25"><a href="#">口腔护理</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">家居日用</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">家具</a></li>
+							<li class="f-pad-h5-v25"><a href="#">烹饪锅具</a></li>
+							<li class="f-pad-h5-v25"><a href="#">厨具刀具</a></li>
+							<li class="f-pad-h5-v25"><a href="#">厨房电器</a></li>
+							<li class="f-pad-h5-v25"><a href="#">餐饮用具</a></li>
+							<li class="f-pad-h5-v25"><a href="#">清洁收纳</a></li>
+							<li class="f-pad-h5-v25"><a href="#">家居饰品</a></li>
+							<li class="f-pad-h5-v25"><a href="#">日用杂货</a></li>
+							<li class="f-pad-h5-v25"><a href="#">卫浴健身</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">食品生鲜</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">生鲜食品</a></li>
+							<li class="f-pad-h5-v25"><a href="#">酒水茶饮</a></li>
+							<li class="f-pad-h5-v25"><a href="#">休闲食品</a></li>
+							<li class="f-pad-h5-v25"><a href="#">粮油干货</a></li>
+							<li class="f-pad-h5-v25"><a href="#">营养保健</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">服装箱包</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">女装</a></li>
+							<li class="f-pad-h5-v25"><a href="#">男装</a></li>
+							<li class="f-pad-h5-v25"><a href="#">鞋靴</a></li>
+							<li class="f-pad-h5-v25"><a href="#">箱包</a></li>
+							<li class="f-pad-h5-v25"><a href="#">配饰</a></li>
+							<li class="f-pad-h5-v25"><a href="#">运动户外</a></li>
+							<li class="f-pad-h5-v25"><a href="#">珠宝运动</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">布艺家纺</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">床品套件</a></li>
+							<li class="f-pad-h5-v25"><a href="#">毛巾被子</a></li>
+							<li class="f-pad-h5-v25"><a href="#">凉席</a></li>
+							<li class="f-pad-h5-v25"><a href="#">枕头</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">家电数码</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">生活家电</a></li>
+							<li class="f-pad-h5-v25"><a href="#">大家电</a></li>
+							<li class="f-pad-h5-v25"><a href="#">手机通讯</a></li>
+							<li class="f-pad-h5-v25"><a href="#">电子数码</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">母婴用品</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">婴幼护理</a></li>
+						</ul>
+					</div>
+					<div class="product_list">
+						<div class="list_title f-list30">
+							<span class="f-pad-h25 f-fs2">保险票务</span>
+						</div>
+						<ul class="f-dn">
+							<li class="f-pad-h5-v25"><a href="#">票务</a></li>
+							<li class="f-pad-h5-v25"><a href="#">保险</a></li>
+						</ul>
+					</div>
+					<div class="f-tal">
+						<span class="f-ib f-lst40 f-pad-h25 f-fs2 f-ib" style="padding-top: 10px;color: #E91456;">特色推荐</span>
+						<ul class="recommend">
+							<li>
+								<a href="#"><img src="images/1.jpg"/></a>
+								<p>利维斯顿碳晶空调式取暖器</p>
+								<span><i>￥</i>499.00</span>
+							</li>
+							<li>
+								<a href="#"><img src="images/2.jpg"/></a>
+								<p>健力士零重力多功能豪华按摩椅</p>
+								<span><i>￥</i>2999.00</span>
+							</li>
+							<li>
+								<a href="#"><img src="images/3.jpg"/></a>
+								<p>奥克斯多用途电暖器1+1超值组</p>
+								<span><i>￥</i>299.00</span>
+							</li>
+							<li>
+								<a href="#"><img src="images/4.jpg"/></a>
+								<p>大捷手持式多功能蒸汽挂烫机</p>
+								<span><i>￥</i>169.00</span>
+							</li>
+						</ul>
+					</div>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="" alt=""/>
+							</a>
+							<p class="f-padding1 f-tal"></p>
+							<p class="f-tal f-pad-l5-1"></p>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="" alt=""/>
+							</a>
+							<p class="f-padding1 f-tal"></p>
+							<p class="f-tal f-pad-l5-1"></p>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="" alt=""/>
+							</a>
+							<p class="f-padding1 f-tal"></p>
+							<p class="f-tal f-pad-l5-1"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="product_bottom_right f-fr">
+					<div class="arc-title f-tal f-padding1-1 f-fs2">
+						<p class="f-lst40 shop_nums">
+							<i></i>共搜索到<i></i>件相关商品
+						</p>
+					</div>
+					<div class="f-archive f-cb">
+						<ul>
+							<li class="f-fl f-padding1-1 f-list30 f-fwb">排序</li>
+							<li class="f-fl f-padding1-1 f-list30">
+								<span class="f-pad-h5 f-bg f-list30 f-ib">
+									<a href="#" class="xlpx">按销量排序↓</a>
+								</span>
+							</li>
+							<li class="f-fl f-padding1-1 f-list30">
+								<span class="f-pad-h25 f-bg f-list30 f-ib">
+									<a href="#" class="sjpx">按上架时间↓</a>
+								</span>
+							</li>
+							<li class="f-fl f-padding1-1 f-list30">
+								<span class="f-pad-h5 f-bg f-list30 f-ib">
+									<a href="#" class="pricepx">按价格↓</a>
+								</span>
+							</li>
+						</ul>
+						<ul class="f-fr">
+							<li class="f-fl f-padding1-1 f-list30 f-fl">
+								<span class="f-pad-h5 f-list30 f-ib">有货商品</span>
+							</li>
+							<li class="f-fl f-padding1-1 f-list30 f-fl">
+								<span class="f-pad-h5 f-list30 f-ib">
+									<a href="#">嘉丽购配送</a>
+								</span>
+							</li>
+							<li class="f-fl f-padding1-1 f-list30 f-fl  f-margin-right ">
+								<span class="f-pad-h5 f-list30 f-ib">
+									<a href="#">商家配送</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div class="m-archive">
+						<ul class="s-archive">
+						</ul>	
+					</div>
+					<div class="bottom-archive"></div>
+				</div>
+			</div>
+		</div>
+		<div class="f-clear"></div>
+		<!--尾部-->
+		<div class="foot_box">
+			<div class="foot_sv" style="border-bottom:2px solid #e91455;height:0;"></div>
+			<div class="foot_sv">
+				<div class="sv_con">正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付</div>
+			</div>
+			<div class="f_help">
+				<div class="f_h_content">
+					<div class="f_2d"></div>
+					<div class="f_help_list">
+						<div class="f_h_list">
+							<strong>购物指南</strong>
+							<a href="#" target="_blank">新用户注册/激活</a>
+							<a href="#" target="_blank">如何订购</a>
+							<a href="#" target="_blank">常见问题</a>
+						</div>
+						<div class="f_h_list">
+							<strong>会员中心</strong>
+							<a href="#" target="_blank">会员权益</a>
+							<a href="#" target="_blank">美丽积分</a>
+							<a href="#" target="_blank">订单查询</a>
+							<a href="#" target="_blank">找回密码</a>
+						</div>
+						<div class="f_h_list">
+							<strong>配送服务</strong>
+							<a href="#" target="_blank">物流跟踪</a>
+							<a href="#" target="_blank">免运费政策</a>
+							<a href="#" target="_blank">运费说明</a>
+						</div>
+						<div class="f_h_list">
+							<strong>支付说明</strong>
+							<a href="#" target="_blank">货到付款</a>
+							<a href="#" target="_blank">在线支付</a>
+						</div>
+						<div class="f_h_list">
+							<strong>售后服务</strong>
+							<a href="#" target="_blank">退换货政策</a>
+							<a href="#" target="_blank">退换货流程</a>
+							<a href="#" target="_blank">安全与保密</a>
+						</div>
+					</div>
+					<div class="call_rz">
+						官方客服-百度安全认证-4006300077
+					</div>
+				</div>
+			</div>
+			<div class="foot_txt f-tac">
+				<p>
+					<a href="main.html" target="_self">商城首页</a> | 
+					<a href="#" target="_blank">官网首页</a> | 
+					<a href="#" target="_blank">供应商登录</a> | 
+					<a href="#" target="_blank">供货联系</a> | 
+					<a target="_blank" onclick="addToFavorite();" href="javascript:void(0)">收藏我们</a> | 
+					<a href="#" target="_blank">公司简介</a> | 
+					<a href="#" target="_blank">媒体报道</a> | 
+					<a href="#" target="_blank">嘉丽购招聘</a> | 
+					<a href="#" target="_blank">官方微博</a> | 
+					<a href="#" target="_blank">营业证照</a>
+				</p>
+				<div class="f-clear">
+				</div>
+				<div style="height:60px;">
+					<p class="f-ib" style="line-height:18px;">
+		嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+						国家广电总局批号：广局[2010] 278号
+						<a style="color:#999" href="#" target="_blank">湘ICP备10203162号-3</a>
+					</p>
+					<div class="f-clear">
+					</div>
+					<p class="f-ib" style="line-height:18px;">
+					</p>
+					<div class="f-clear">
+					</div>
+				</div>
+				<p class="rz">
+					<a href="#" target="_blank">
+					<img src="images/kx.jpg" alt="认证联盟 可信网站">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/360.jpg" alt="安全联盟认证">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/alipay_s.gif" alt="支付宝特约商家">
+					</a>
+					<a href="#" target="_blank">
+					<img src="images/hn110_s.gif" alt="网络110报警">
+					</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

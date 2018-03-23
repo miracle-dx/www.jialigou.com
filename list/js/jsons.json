@@ -1,0 +1,111 @@
+[
+	
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/1.jpg",
+		"alt" : "图片一",
+		"title" : "（周年庆）利维斯顿碳晶空调式取暖器",
+		"price" : "499.00",
+		"sellnum" : "301",
+		"name" : "取暖器"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/2.jpg",
+		"alt" : "图片二",
+		"title" : "（周年庆）健力士零重力多功能豪华按摩椅",
+		"price" : "2999.00",
+		"sellnum" : "291",
+		"name" : "按摩椅"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/3.jpg",
+		"alt" : "图片三",
+		"title" : "奥克斯多用途电暖器1+1超值组",
+		"price" : "299.00",
+		"sellnum" : "929",
+		"name" : "电暖器"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/4.jpg",
+		"alt" : "图片四",
+		"title" : "（周年庆）大捷手持式多功能蒸汽挂烫机",
+		"price" : "169.00",
+		"sellnum" : "102",
+		"name" : "挂烫机"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/5.jpg",
+		"alt" : "图片五",
+		"title" : "（周年庆）小尔智能加热破壁料理机",
+		"price" : "499.00",
+		"sellnum" : "1125",
+		"name" : "料理机"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/6.jpg",
+		"alt" : "图片六",
+		"title" : "（冰点价）西布朗夏日缤纷果汁料理杯超值组",
+		"price" : "199.00",
+		"sellnum" : "96",
+		"name" : "果汁杯"
+	},
+	{	
+		"a" : "../details/details.html",
+		"img" : "images/7.jpg",
+		"alt" : "图片七",
+		"title" : "沃尔特电动扫拖一体机1+1家庭",
+		"price" : "199.00",
+		"sellnum" : "2448",
+		"name" : "电扫拖"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/8.jpg",
+		"alt" : "图片八",
+		"title" : "奥马455升纤薄对开冰箱",
+		"price" : "2899.00",
+		"sellnum" : "92",
+		"name" : "冰箱"
+	}
+	,{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/9.jpg",
+		"alt" : "图片九",
+		"title" : "奔腾金彩银系列剃须刀组合",
+		"price" : "199.00",
+		"sellnum" : "529",
+		"name" : "剃须刀"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/10.jpg",
+		"alt" : "图片十",
+		"title" : "德国弗德尔高端电热水龙头",
+		"price" : "299.00",
+		"sellnum" : "179",
+		"name" : "水龙头"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/11.jpg",
+		"alt" : "图片十一",
+		"title" : "（周年庆）东芝55英寸智能网络LED电视（厂送）",
+		"price" : "2799.00",
+		"sellnum" : "35",
+		"name" : "LED电视"
+	},
+	{	
+		"a" : "http://www.baidu.com",
+		"img" : "images/12.jpg",
+		"alt" : "图片十二",
+		"title" : "（周年庆）威力8KG全智能大容量热烘干洗衣机加赠组合",
+		"price" : "1580.00",
+		"sellnum" : "189",
+		"name" : "洗衣机"
+	}
+]

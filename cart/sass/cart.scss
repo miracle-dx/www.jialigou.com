@@ -1,0 +1,43 @@
+.head{width: 100%;background: #f7f7f7;
+    .head_bar{width: 1190px;height: 26px;margin: 0 auto;line-height: 26px;padding: 5px;
+        .con_left{width: 240px;height: 100%;
+            .f-t-i{width: 18px;height: 18px;display: inline-block;margin-right: 5px;background: url(../images/ind-tel.png) no-repeat;vertical-align: middle;}
+            span{font-size: 14px;color: #e91456;}
+        }
+        .con_right{
+            .f-mobile-i{display: inline-block;width: 18px;height: 18px;margin-right: 5px;vertical-align: middle;background: url(../images/ind-mobile.png) no-repeat;}
+        }
+    }
+}
+.my-sch{width: 100%;background: #fff;
+    .my-sch-con{height: 74px;margin:10px auto;width: 1190px;
+    position: relative;
+        p{font-family: "微软雅黑";font-size: 17px;height: 74px;line-height: 74px;margin-left:13px ;display: inline-block;
+            i{color: #C9C9C9;padding-right: 15px;font-size: 17px;}
+        }
+        .shop-step{width: 530px;height: 37px;position: absolute;right: 0;bottom: 0;
+            .step{
+                li{height: 4px;width: 132px;float: left;background: #ccc;position: relative;
+                    img{width: 10px;height: 10px;position: absolute;left: 47%;top:-3px ;}
+                }
+            }
+            .doted{
+                li{height: 30px;width: 132px;float: left;text-align: center;line-height: 30px;}
+            }
+        }
+    }
+}
+.middle{width:1190px ;height: 20px;line-height: 20px;margin: 0 auto;padding-top: 20px;
+    .all{ font-size: 13px;float: left;display: inline-block;margin-left: 5px;}
+    .return{float: right;display: inline-block;
+    margin-right:5px ;
+        a{font-size: 13px;color: red;}
+    }
+}
+.cartList{width: 1188px;margin: 0 auto;border: 1px solid #C9C9C9;margin-top:7px ;
+    .blank{
+    width: 1180px;text-align: center;
+    p{margin-top: 50px;}
+}
+}
+
